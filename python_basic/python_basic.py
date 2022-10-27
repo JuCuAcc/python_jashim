@@ -102,3 +102,42 @@
 #pi = input("What's the value of pi? ")
 #pi = float(pi)
 #print(pi)
+
+##While loops
+#current_value = 1
+#while current_value <= 5:
+#    print(current_value)
+#    current_value += 1
+
+## Letting user choose when to quit
+#msg = ''
+#while msg != 'quit':
+#    msg = input("What's your message?\t")
+#    print(msg)
+
+##Functions
+#def greet_user():
+#    """Display a simple greeting."""
+#    print("Hi!")
+#greet_user()
+
+#def greet_user(username):
+#    """Display a personalized greeting."""
+#    print("Hello, " + username + "!")
+#greet_user('Jashim')
+
+##Default values for parameters
+#def make_pizza(topping='bacon'):
+#    """Make a single-topping pizza."""
+#    print("Have a " + topping + " pizza!")
+
+#make_pizza()
+#make_pizza('pepperoni')
+
+##Returning a value
+#def add_numbers(x, y):
+#    """Add two numbers and return the sum."""
+#    return x + y
+
+#sum = add_numbers(3, 5)
+#print(sum)
