@@ -1,2 +1,2 @@
-# python_jashim
+# Basic Python
 Python Practice
