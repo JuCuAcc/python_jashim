@@ -142,42 +142,96 @@
 #sum = add_numbers(3, 5)
 #print(sum)
 
-#Classes
-#A class defines the behavior of an object and the kind of information an object can store.
-#The information in aclass is stored in attributes, and functions that belong to a class are called methods.
-#A child class inherits the attributes and methods from its parent class.
+##Classes
+##A class defines the behavior of an object and the kind of information an object can store.
+##The information in aclass is stored in attributes, and functions that belong to a class are called methods.
+##A child class inherits the attributes and methods from its parent class.
 
-#Creating a dog class
-class Dog():
-    """Represent a dog."""
-    def __init__(self, name):
-        """Initialize dog object."""
-        self.name = name
-    def sit(self):
-        """Simulate sitting."""
-        print(self.name + " is sitting.")
+##Creating a dog class
+#class Dog():
+#    """Represent a dog."""
+#    def __init__(self, name):
+#        """Initialize dog object."""
+#        self.name = name
+#    def sit(self):
+#        """Simulate sitting."""
+#        print(self.name + " is sitting.")
 
-my_dog = Dog('Peso')
+#my_dog = Dog('Peso')
 
-print(my_dog.name + " is a great dog!")
-my_dog.sit()
+#print(my_dog.name + " is a great dog!")
+#my_dog.sit()
 
 
-#Inheritance
-class SARDog(Dog):
-    """Represent a search dog."""
-    def __init__(self, name):
-        """Initialize the sardog."""
-        super().__init__(name)
-    def search(self):
-        """Simulate searching."""
-        print(self.name + " is searching.")
+##Inheritance
+#class SARDog(Dog):
+#    """Represent a search dog."""
+#    def __init__(self, name):
+#        """Initialize the sardog."""
+#        super().__init__(name)
+#    def search(self):
+#        """Simulate searching."""
+#        print(self.name + " is searching.")
 
-my_dog = SARDog('Willie')
+#my_dog = SARDog('Willie')
 
-print(my_dog.name + " is a search dog.")
-my_dog.sit()
-my_dog.search()
+#print(my_dog.name + " is a search dog.")
+#my_dog.sit()
+#my_dog.search()
+
+##Working with files
+##Files are opened in read mode('r') by default,
+##but can also be opened in write('w') and append mode('a').
+
+##Reading a file and storing its lines
+#filename = "D:\\Python Practice\\python_jashim\\python_basic\\files\\jashim.txt"
+
+##1st Method
+##filename = open("D:\\Python Practice\\python_jashim\\python_basic\\files\\jashim.txt", "r")
+##print(filename.read())
+
+##2nd Method
+##with open(filename) as file_object:
+##    lines = file_object.readlines()
+##for line in lines:
+##    print(line)
+
+##Writing to a file 
+#with open(filename,'w') as file_object:
+#    file_object.write("I love programming.")
+#with open(filename) as file_object:
+#    lines = file_object.readlines()
+#for line in lines:
+#    print(line)
+
+##Appending to a file 
+#with open(filename,'a') as file_object:
+#    file_object.write("\nI love making games. ")
+#with open(filename) as file_object:
+#    lines = file_object.readlines()
+#for line in lines:
+#    print(line)
+
+
+##Catching an exception
+#prompt = "How many tickets do you need? "
+#num_tickets = input(prompt)
+
+#try:
+#    num_tickets = int(num_tickets)
+#except ValueError:
+#    print("Please try again.")
+#else:
+#    print("Your tickets are printing.")
+
+"""
+    #Zen of Python
+    #Simple is better than complex
+    #If you have a choice between a simple and a complex solution,
+    #and both work, use the simple solution.
+    #Your code will be easier to maintain, and it will be easier
+    #for you and others to build on that code later on.
+"""
 
 
 
