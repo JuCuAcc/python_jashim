@@ -152,6 +152,7 @@
 
 ##pythontutor.com is a great tool for seeing how Python
 ##keeps track of the information in a list.
+##https://pythontutor.com/render.html#mode=display
 
 #dogs = []
 #dogs.append('willie')

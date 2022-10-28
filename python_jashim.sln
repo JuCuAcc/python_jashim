@@ -7,6 +7,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "python_basic", "python_basi
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "python_lists", "python_lists\python_lists.pyproj", "{E1536472-CE6B-4EB0-A4E3-46160A0E3094}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "python_dictionaries", "python_dictionaries\python_dictionaries.pyproj", "{A8CABBC7-6BE4-45FB-B0CD-633F2A75135C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,8 @@ Global
 		{9E06AD49-BC49-40B4-B155-8A02E6334BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1536472-CE6B-4EB0-A4E3-46160A0E3094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E1536472-CE6B-4EB0-A4E3-46160A0E3094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CABBC7-6BE4-45FB-B0CD-633F2A75135C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CABBC7-6BE4-45FB-B0CD-633F2A75135C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
