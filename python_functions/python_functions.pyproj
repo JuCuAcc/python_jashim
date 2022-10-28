@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3dd65fe5-6ba0-41a2-8dc4-21c864a6aab1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>python_functions.py</StartupFile>
+    <StartupFile>making_pizzas.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="making_pizzas.py" />
+    <Compile Include="pizza.py" />
     <Compile Include="python_functions.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
