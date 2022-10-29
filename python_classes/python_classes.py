@@ -105,3 +105,58 @@ my_ecar.charge()
 my_ecar.drive()
 
 
+# Overriding parent methods
+class ElectricCar(Car):
+    #--snip--
+    def fill_tank(self):
+        """Display an error message."""
+        print("This car has no fuel tank!")
+
+# Instances as attributes
+# A class can have objects as attributes. This allows classes
+#   to work together to model complex situations.
+
+# A Battery class
+class Battery():
+    """A battery for an electric car."""
+
+    def __init__(self, size = 70): 
+        """Initialize battery attributes."""
+        # Capacity in kWh, charge level in %.
+        self.size = size
+        self.charge_level = 0
+
+    def get_range(self):
+        """Return the battery's range."""
+        if self.size == 70:
+            return 240
+        elif self.size == 85:
+            return 270
+
+# Using an instance as an attribute
+class ElectricCar(Car): 
+    """A simple model of an electric car."""
+
+    def __init__(self, make, model, year): 
+        """Initialize an electric car."""
+        super().__init__(make, model, year) 
+
+        # Attributes specific to electric cars.
+        self.battery = Battery()
+
+    def charge(self):
+        """Fully charge the vehicle."""
+        self.battery.charge_level = 100
+        print("The vehicle is fully charged.")
+
+# Using the instance
+my_ecar = ElectricCar('tesla', 'model x', 2022)
+
+my_ecar.charge()
+print(my_ecar.battery.get_range())
+my_ecar.drive()
+
+# Importing classes
+# Class files can get long as you add detailed information and functionality.
+# To help keep your program files uncluttered, you can store your classes in
+#  modules and import the classes you need into your main program.
