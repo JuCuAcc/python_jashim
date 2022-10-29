@@ -212,3 +212,18 @@ except FileNotFoundError:
     print(msg)
 else:
     print(numbers)
+
+
+# https://www.geeksforgeeks.org/json-dump-in-python/
+
+out_file = open("text_files/numbers.json", "w")   
+json.dump(numbers, out_file, indent = 6)   
+out_file.close()
+
+f_path = "text_files/numbers.json"
+
+with open(f_path) as f_obj: 
+    lines = f_obj.readlines()
+
+for line in lines: 
+    print(line.rstrip())
