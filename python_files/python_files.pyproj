@@ -27,6 +27,7 @@
     <Folder Include="text_files\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="text_files\numbers.json" />
     <Content Include="text_files\uddin.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

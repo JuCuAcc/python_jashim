@@ -159,3 +159,56 @@ for f_name in f_names:
         num_lines = len(lines)
         msg = "{0} has {1} lines.".format(f_name, num_lines)
         print(msg)
+
+# Don't use bare except blocks
+try:
+    # Do something
+    pass
+except:
+    pass
+
+# Use Exception instead
+try:
+    # Do something
+    pass
+except Exception:
+    pass
+
+# Printing the Exception 
+try:
+    # Do something
+    pass
+except Exception as e:
+    print(e, type(e))
+
+
+
+# Storing data with json
+# Using json.dump() to store data
+
+"""Store some numbers"""
+
+import json
+
+numbers = [2, 3, 5, 7, 11, 13]
+
+filename = 'text_files/numbers.json'
+with open(filename) as f_obj:
+    numbers = json.load(f_obj)
+
+print(numbers)
+
+
+# Making sure the stored data exists
+import json
+
+filename = 'text_files/numbers.json'
+
+try:
+    with open(filename) as f_obj:
+        numbers = json.load(f_obj)
+except FileNotFoundError:
+    msg = "Can't find {0}.".format(f_name) 
+    print(msg)
+else:
+    print(numbers)
