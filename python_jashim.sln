@@ -23,6 +23,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "python_pygame", "python_pyg
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "python_matplotlib", "python_matplotlib\python_matplotlib.pyproj", "{85EDA84F-469D-47D8-9DF0-791D4A1EA066}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "python_pygal", "python_pygal\python_pygal.pyproj", "{CB429BA1-0EC7-4550-BAD0-3977A99AD04F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,8 @@ Global
 		{EE60A3E6-B811-476D-BF0F-16A93E32BDBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85EDA84F-469D-47D8-9DF0-791D4A1EA066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{85EDA84F-469D-47D8-9DF0-791D4A1EA066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB429BA1-0EC7-4550-BAD0-3977A99AD04F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB429BA1-0EC7-4550-BAD0-3977A99AD04F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
