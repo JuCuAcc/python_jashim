@@ -72,3 +72,33 @@ def run_game():
 
 run_game()
 
+def blitme(self): 
+    """Draw ship at current location."""
+    self.screen.blit(self.image, self.rect)
+
+# Responding to the mouse button
+for event in pg.event.get():
+    if event.type == pg.MOUSEBUTTONDOWN:
+        ship.fire_bullet()
+
+
+
+def blitme(self): 
+    """Draw ship at current location."""
+    self.screen.blit(self.image, self.rect)
+
+# Responding to the mouse button
+for event in pg.event.get():
+    if event.type == pg.MOUSEBUTTONDOWN:
+        ship.fire_bullet()
+
+
+# The mouse position is returned as a tuple
+mouse_pos = pg.mouse.get_pos()
+
+# The rect.collidepoint() method returns true when a point is inside a rect object.
+if button_rect.collidepoint(mouse_pos): 
+    start_game()
+# Hiding the mouse
+pg.mouse.set_visible(False)
+
