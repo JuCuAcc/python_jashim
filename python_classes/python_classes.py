@@ -2,7 +2,7 @@
 # Functions that are part of a class are called methods.
 
 # Naming conventions
-# In Python class names are written in CamelCase and object names are written in lowercase with underscores.
+# In Python class names are written in PascalCase and object names are written in lowercase with underscores.
 # Modules that contain classes should still be named in lowercase with underscores.
 
 # The Car Class
