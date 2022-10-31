@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cb429ba1-0ec7-4550-bad0-3977a99ad04f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>python_pygal.py</StartupFile>
+    <StartupFile>python_pygal4.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="python_pygal4.py" />
+    <Compile Include="python_pygal3.py" />
+    <Compile Include="python_pygal2.py" />
     <Compile Include="python_pygal.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
